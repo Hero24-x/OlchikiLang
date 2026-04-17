@@ -1,5 +1,4 @@
-# OlchikiLang
-# 🚀 OlchikiLang
+#OlchikiLang
 
 **OlchikiLang** is an experimental programming language built using the **Ol Chiki script** used for the Santali language.
 
