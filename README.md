@@ -161,7 +161,7 @@ Open Source Project
 **Shibnath Hansda**
 
 Creator of **OlchikiLang**
-🧠 First experimental **Ol-Chiki Santali Programming Language**
+🧠 First 1st  **Ol-Chiki Santali Programming Language**
 
 🔗 GitHub: https://github.com/Hero24-x
 
