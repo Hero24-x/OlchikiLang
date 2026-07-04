@@ -235,7 +235,7 @@ This project is released under the MIT License.
 
 <div align="center">
 
-Built with ❤️ for the Santali language community.
+Built with ❤️ ###Shibnath Hansda.###
 
 ᱡᱚᱦᱟᱨ
 
