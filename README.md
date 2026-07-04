@@ -221,17 +221,6 @@ The long-term mission is to make programming accessible to every Santali speaker
 * Natural Language Processing
 
 ---
-
-# Installation
-
-```bash
-git clone https://github.com/ShibnathHansda/SPL.git
-
-cd SPL
-
-python main.py
-```
-
 ---
 
 # Example REPL
