@@ -245,7 +245,9 @@ The project promotes innovation, digital inclusion, and the preservation of Sant
 
 <div align="center">
 
-###    ᱚᱞ ᱪᱤᱠᱤ ᱞᱟᱝ (OlchikiLang) 
+###    ᱚᱞ ᱪᱤᱠᱤ ᱞᱟᱝ (OlchikiLang)
+
+**The Programming Language for Santali and Ol Chiki Computing**
 
 **Think Ethical • Hack Responsibly • Build Secure**
 
