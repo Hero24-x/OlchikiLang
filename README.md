@@ -190,10 +190,11 @@ The language core, parser, interpreter, Unicode processing, and interactive exec
 ---
 
 ## Vision
+OlchikiLang is an experimental programming language developed for education, research, software development, and indigenous language computing.
 
-OlchikiLang aspires to become the foundation of a complete Santali software ecosystem, enabling developers, students, researchers, and organizations to build technology using their native language.
+The project is intended to promote digital accessibility, language preservation, and innovation within the Santali-speaking community.
 
-By bridging traditional linguistic heritage with modern computing, the project aims to expand digital opportunities for Santali-speaking communities worldwide.
+Users are responsible for ensuring compliance with applicable laws, regulations, and organizational policies when developing and deploying software created using OlchikiLang.
 
 ---
 
@@ -217,26 +218,37 @@ Please open an issue or submit a pull request to help improve the project.
 
 ---
 
-## Author
+# 👨‍💻 Creator
 
-**Shibnath Hansda**
+## Shibnath Hansda
 
-Founder, HansdaTechs
+**Founder & Developer of OLCHIKILANG**
 
-Creator of OlchikiLang
+Cybersecurity Enthusiast • Linux Developer • Security Researcher
+
+## Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-Hero24--x-181717?style=for-the-badge&logo=github)](https://github.com/Hero24-x)
+
+[![Instagram](https://img.shields.io/badge/Instagram-@ethicalhansda-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ethicalhansda)
+
+[![Email](https://img.shields.io/badge/Email-hansdatechs24@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hansdatechs24@gmail.com)
 
 ---
 
-## License
+# ⚠️ Disclaimer
+OlchikiLang is an independent open-source programming language project focused on education, research, software development, and indigenous language technology.
 
-This project is released under the MIT License.
+The project promotes innovation, digital inclusion, and the preservation of Santali linguistic heritage through modern computing.
 
 ---
 
 <div align="center">
 
-Built with ❤️ ###Shibnath Hansda.###
+### Olchiki Lang
 
-ᱡᱚᱦᱟᱨ
+**Think Ethical • Hack Responsibly • Build Secure**
+
+Built with ❤️ by **Shibnath Hansda**
 
 </div>
