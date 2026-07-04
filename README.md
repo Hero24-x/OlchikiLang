@@ -1,146 +1,105 @@
-# SPL
+# ᱚᱞ ᱪᱤᱠᱤ ᱞᱟᱝ (OlchikiLang)
 
-### Santali Programming Language
+<div align="center">
 
-> A modern programming language built for the Santali language and the Ol Chiki writing system.
+### A Modern Programming Language for the Santali Language and Ol Chiki Script
+
+Empowering indigenous language computing through native programming experiences.
 
 ![Version](https://img.shields.io/badge/version-1.0-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 ![Language](https://img.shields.io/badge/language-Santali-orange)
 ![Script](https://img.shields.io/badge/script-Ol%20Chiki-red)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+</div>
 
 ---
 
-## About
+## Overview
 
-SPL (Santali Programming Language) is a modern programming language designed specifically for the Santali language and the Ol Chiki writing system.
+OlchikiLang is an experimental programming language designed specifically for the Santali language and the Ol Chiki writing system.
 
-The project aims to provide Santali speakers with a native software development environment where programming can be performed using Santali keywords, Ol Chiki characters, and Santali numerals.
+The project aims to make software development more accessible to Santali speakers by providing a programming environment that supports Santali keywords, Santali numerals, and native Ol Chiki script.
 
-SPL represents a step toward inclusive computing by enabling software development in one of India's indigenous languages while preserving linguistic identity in the digital era.
-
----
-
-## Creator
-
-**Shibnath Hansda**
-
-Founder, HansdaTechs
-
-Lead Architect of SPL (Santali Programming Language)
+Beyond language development, OlchikiLang contributes to the broader goal of indigenous language preservation and digital inclusion in modern computing.
 
 ---
 
-## Vision
+## Mission
 
-SPL aims to build a complete Santali computing ecosystem for:
+Our mission is to establish a foundation for Santali computing by enabling:
 
-* Education
-* Software Development
-* Web Applications
-* Desktop Applications
-* Mobile Applications
-* Artificial Intelligence
-* Research and Innovation
-* Digital Preservation of Santali Language
-
-The long-term mission is to make programming accessible to every Santali speaker through their own language and script.
+* Native-language programming
+* Computer science education in Santali
+* Indigenous language technology research
+* Digital preservation of Ol Chiki script
+* Development of future Santali software ecosystems
 
 ---
 
-# Features
+## Key Features
 
-## Language Core
+### Language Core
 
-* Variables
+* Variables and Assignment
 * Arithmetic Operations
 * Boolean Values
-* Comparisons
+* Comparison Operators
 * Conditional Statements
-* Loops
-* Functions
-* Parameters
+* Loop Constructs
+* User-Defined Functions
+* Function Parameters
 * Return Values
 * Nested Function Calls
 * Unicode Ol Chiki Support
-* Interactive REPL
+* Interactive REPL Environment
 
 ---
 
-## Ol Chiki Keywords
+## Language Keywords
 
-| Keyword | Meaning             |
-| ------- | ------------------- |
-| ᱪᱟᱯᱟ    | Print               |
-| ᱥᱮᱴ     | Variable Assignment |
-| ᱡᱩᱫᱤ    | If                  |
-| ᱮᱞᱥᱮ    | Else                |
-| ᱫᱚᱦᱚᱨ   | Loop                |
-| ᱯᱩᱱ     | Function            |
-| ᱫᱟᱨ     | Return              |
-| ᱥᱟᱹᱨᱤ   | True                |
-| ᱜᱮᱞ     | False               |
+| Ol Chiki Keyword | Description          |
+| ---------------- | -------------------- |
+| ᱪᱟᱯᱟ             | Print Output         |
+| ᱥᱮᱴ              | Variable Assignment  |
+| ᱡᱩᱫᱤ             | If Statement         |
+| ᱮᱞᱥᱮ             | Else Statement       |
+| ᱫᱚᱦᱚᱨ            | Loop                 |
+| ᱯᱩᱱ              | Function Declaration |
+| ᱫᱟᱨ              | Return Value         |
+| ᱥᱟᱹᱨᱤ            | True                 |
+| ᱜᱮᱞ              | False                |
 
 ---
 
-# Example Programs
+## Examples
 
-## Print
+### Hello World
 
-```spl
+```olchiki
 ᱪᱟᱯᱟ "ᱡᱚᱦᱟᱨ"
 ```
 
-## Variables
+### Variables
 
-```spl
+```olchiki
 ᱥᱮᱴ ᱠ = ᱑᱐
 ᱪᱟᱯᱟ ᱠ
 ```
 
-## Arithmetic
+### Conditional Statements
 
-```spl
-ᱪᱟᱯᱟ (᱒ + ᱓)
-```
-
-## If Statement
-
-```spl
+```olchiki
 ᱡᱩᱫᱤ (᱑ == ᱑) {
     ᱪᱟᱯᱟ "ᱦᱚᱴᱟ"
 }
 ```
 
-## If Else
+### Functions
 
-```spl
-ᱡᱩᱫᱤ (᱑ == ᱒) {
-    ᱪᱟᱯᱟ "ᱦᱚᱴᱟ"
-}
-ᱮᱞᱥᱮ {
-    ᱪᱟᱯᱟ "ᱵᱟᱝ"
-}
-```
-
-## Loop
-
-```spl
-ᱥᱮᱴ ᱠ = ᱐
-
-ᱫᱚᱦᱚᱨ (ᱠ < ᱓) {
-
-    ᱪᱟᱯᱟ ᱠ
-
-    ᱥᱮᱴ ᱠ = ᱠ + ᱑
-}
-```
-
-## Functions
-
-```spl
+```olchiki
 ᱯᱩᱱ ᱡᱚᱜ(ᱠ, ᱜ) {
-
     ᱫᱟᱨ ᱠ + ᱜ
 }
 
@@ -149,121 +108,135 @@ The long-term mission is to make programming accessible to every Santali speaker
 
 ---
 
-# Current Status
+## Current Implementation Status
 
-| Feature           | Status |
-| ----------------- | ------ |
-| Variables         | ✅      |
-| Arithmetic        | ✅      |
-| Comparisons       | ✅      |
-| Boolean           | ✅      |
-| If / Else         | ✅      |
-| Loop              | ✅      |
-| Functions         | ✅      |
-| Parameters        | ✅      |
-| Return            | ✅      |
-| Nested Functions  | ✅      |
-| REPL              | ✅      |
-| Ol Chiki Numerals | ✅      |
-| Unicode Support   | ✅      |
+| Component              | Status |
+| ---------------------- | ------ |
+| Variables              | ✅      |
+| Arithmetic Expressions | ✅      |
+| Comparisons            | ✅      |
+| Boolean Values         | ✅      |
+| Conditional Statements | ✅      |
+| Loops                  | ✅      |
+| Functions              | ✅      |
+| Parameters             | ✅      |
+| Return Statements      | ✅      |
+| Nested Function Calls  | ✅      |
+| REPL                   | ✅      |
+| Ol Chiki Numerals      | ✅      |
+| Unicode Support        | ✅      |
 
 ---
 
-# Roadmap
+## Project Roadmap
 
-## Version 1.x
+### Version 1.x
 
 * Arrays
 * Lists
-* For Loops
 * Comments
+* For Loops
 * Import System
 * Standard Library
 
-## Version 2.x
+### Version 2.x
 
 * File Handling
 * Modules
 * JSON Support
 * Error Handling
 
-## Version 3.x
+### Version 3.x
 
-* Package Manager (SPL-PM)
+* Package Manager
 * Bytecode Virtual Machine
 * Compiler Infrastructure
-* Performance Optimization
+* Performance Optimizations
 
-## Version 4.x
+### Version 4.x
 
-* Native GUI Framework
-* Desktop Application Toolkit
-* Plugin Architecture
+* GUI Development Framework
+* Native Desktop Applications
+* Plugin System
 
-## Version 5.x
+### Version 5.x
 
-* Web Framework
-* HTTP Server
-* Routing System
-* Database Connectivity
+* Web Development Framework
+* HTTP Services
+* Routing Engine
+* Database Integration
 
-## Version 6.x
+### Version 6.x
 
-* Android Development
-* Cross-Platform Applications
-* Native Packaging
+* Mobile Application Development
+* Android Toolchain
+* Cross-Platform Deployment
 
-## Version 7.x
+### Version 7.x
 
-* AI Integration
-* Machine Learning Libraries
+* Artificial Intelligence Libraries
+* Machine Learning Support
+* Natural Language Processing
 * Santali AI Ecosystem
+
+---
+
+## Development Status
+
+OlchikiLang is currently under active development.
+
+The language core, parser, interpreter, Unicode processing, and interactive execution environment have been implemented. Future releases will focus on tooling, standard libraries, package management, and compiler technologies.
+
+---
+
+## Vision
+
+OlchikiLang aspires to become the foundation of a complete Santali software ecosystem, enabling developers, students, researchers, and organizations to build technology using their native language.
+
+By bridging traditional linguistic heritage with modern computing, the project aims to expand digital opportunities for Santali-speaking communities worldwide.
+
+---
+
+## Research Areas
+
+* Programming Language Design
+* Compiler Engineering
+* Indigenous Language Computing
+* Unicode Processing
+* Educational Technology
+* Language Preservation
 * Natural Language Processing
 
 ---
----
 
-# Example REPL
+## Contributing
 
-```text
-SPL ┠─► ᱪᱟᱯᱟ "ᱡᱚᱦᱟᱨ"
+Contributions, feedback, issue reports, and feature suggestions are welcome.
 
-ᱡᱚᱦᱟᱨ
-```
+Please open an issue or submit a pull request to help improve the project.
 
 ---
 
-# Philosophy
-
-Programming should be accessible in every language.
-
-SPL is built on the belief that indigenous languages deserve a place in modern computing. By bringing programming to the Ol Chiki script, SPL empowers Santali speakers to create software, learn computer science, and participate in the global technology ecosystem without abandoning their linguistic identity.
-
----
-
-# Research Goals
-
-* Indigenous Language Computing
-* Programming Language Design
-* Compiler Development
-* Digital Language Preservation
-* Santali NLP Research
-* Educational Technology
-
----
-
-# License
-
-MIT License
-
----
-
-# Author
+## Author
 
 **Shibnath Hansda**
 
 Founder, HansdaTechs
 
-Creator and Lead Architect of SPL
+Creator of OlchikiLang
 
-© 2026 Shibnath Hansda. All Rights Reserved.
+---
+
+## License
+
+This project is released under the MIT License.
+
+---
+
+<div align="center">
+
+Built with ❤️ for the Santali language community.
+
+ᱡᱚᱦᱟᱨ
+
+</div>
