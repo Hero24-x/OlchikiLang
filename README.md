@@ -245,7 +245,7 @@ The project promotes innovation, digital inclusion, and the preservation of Sant
 
 <div align="center">
 
-### Olchiki Lang
+###    ᱚᱞ ᱪᱤᱠᱤ ᱞᱟᱝ (OlchikiLang) 
 
 **Think Ethical • Hack Responsibly • Build Secure**
 
