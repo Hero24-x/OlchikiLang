@@ -1,6 +1,6 @@
 # OlChikiLang
 
-> A Programming Language for the Ol Chiki Script
+> Santali Programming Language for the Ol Chiki Script
 
 OlChikiLang is a programming language developed by **Disom Labs** for the Santali language using the **Ol Chiki** script. It aims to make programming more accessible to Santali speakers by enabling coding in their native writing system.
 ---
