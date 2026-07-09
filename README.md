@@ -1,8 +1,8 @@
-# ᱚᱞ ᱪᱤᱠᱤ ᱞᱟᱝ (OlchikiLang)
+# ᱚᱞᱪᱤᱠᱤLang
 
 <div align="center">
 
-### A Modern Programming Language for the Santali Language and Ol Chiki Script
+### OlChiki Programming Language
 
 Empowering indigenous language computing through native programming experiences.
 
