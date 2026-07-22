@@ -1,5 +1,13 @@
+import sys
+import os
+
 from updater import check_updates
 from spl.parser import parse_lines, to_english, RED, RESET
+
+
+YELLOW = "\033[93m"
+GREEN = "\033[92m"
+RESET = "\033[0m"
 
 
 BLOCK_COMMANDS = [
@@ -7,6 +15,7 @@ BLOCK_COMMANDS = [
 ]
 
 BLOCK_END = "ᱢᱩᱪ"
+ELSE_COMMAND = "ᱵᱟᱝ"
 
 
 def is_block_command(line):
@@ -14,50 +23,93 @@ def is_block_command(line):
 
 check_updates()
 
+def run_file(filename):
+    if not os.path.exists(filename):
+        print(f"{RED}File not found:{filename}{RESET}")
+        return
+
+    with open(filename, "r", encoding="utf-8") as file:
+        lines = file.readlines()
+
+    for line in lines:
+        line = line.strip()
+
+        if line:
+            parse_lines(line)
+
+        if len(sys.argv) > 1:
+            run_file(sys.argv[1])
+            exit()
+
 print("------------------------------------------")
-print(" OlChikiLang 1.0.0 [Disom Labs] ")
-print(" Olchiki Programming Language ")
-print(" Commands: ᱵᱷᱟᱨᱥᱚᱱ, ᱥᱟᱯᱷᱟ, ᱜᱚᱡ, ᱛᱚᱣᱟ ")
+print(" ᱚᱞᱪᱤᱠᱤLang 1.0.0 [HansdaTechs] ")
+print(" Santali Programming Language ")
+print(" Commands: ᱵᱷᱟᱨᱥᱚᱱ, ᱥᱟᱯᱷᱟ, ᱜᱚᱡ, ᱰᱟᱦᱮ ")
 print("------------------------------------------")
 
 
 while True:
     try:
 
-        user_input = input("ᱦᱟᱸᱥᱫᱟ >>> ").strip()
+        user_input = input(f"{YELLOW}ᱦᱟᱸᱥᱫᱟ{RESET} {GREEN}>>>{RESET}").strip()
 
         if not user_input:
             continue
 
+        if user_input.startswith("#"):
+            continue
+
 
         # EXIT
-        if user_input == "ᱛᱚᱣᱟ":
-            print("Exiting...")
+        if user_input == "ᱰᱟᱦᱮ":
+            print("ᱰᱟᱦᱮ...")
             break
 
 
         # IF BLOCK
         if is_block_command(user_input):
 
-            block = []
-            block.append(user_input)
+            block_true = []
+            block_false = []
+
+            condition = user_input.replace(
+                "ᱡᱩᱫᱤ",
+                "",
+                1
+            ).strip()
+
+            result = parse_lines(
+                "ᱡᱩᱫᱤ " + condition
+            )
+
+            current = block_true
 
             while True:
+
                 line = input("    ").strip()
 
                 if line == BLOCK_END:
                     break
 
+                if line == ELSE_COMMAND:
+                    current = block_false
+                    continue
+
                 if line:
-                    block.append(line)
+                    current.append(line)
 
 
-            # execute block
-            for command in block:
-                parse_lines(command)
+            if result:
+
+                for cmd in block_true:
+                    parse_lines(cmd)
+
+            else:
+
+                for cmd in block_false:
+                    parse_lines(cmd)
 
             continue
-
 
 
         # LOOP
@@ -82,21 +134,26 @@ while True:
 
 
 
-        # NORMAL COMMAND + DIRECT EXPRESSION
         if user_input.startswith(
-            ("ᱥᱮᱴ", "ᱪᱟᱯᱟ", "ᱵᱷᱟᱨᱥᱚᱱ", "ᱥᱟᱯᱷᱟ", "ᱜᱚᱡ")
+            (
+            "ᱥᱮᱴ",
+            "ᱪᱷᱟᱯᱟ",
+            "ᱵᱷᱟᱨᱥᱚᱱ",
+            "ᱥᱟᱯᱷᱟ",
+            "ᱜᱚᱡ",
+            "ᱢᱮᱢ"
+            )
         ):
             parse_lines(user_input)
 
         else:
-            # Python style REPL expression
-            parse_lines("ᱪᱟᱯᱟ " + user_input)
+            parse_lines("ᱪᱷᱟᱯᱟ " + user_input)
 
 
 
     except KeyboardInterrupt:
         print(
-            f"\n{RED}❌ Process interrupted! Type ᱛᱚᱣᱟ to quit.{RESET}"
+            f"\n{RED}❌ Process interrupted! Type ᱰᱟᱦᱮ to quit.{RESET}"
         )
 
 
